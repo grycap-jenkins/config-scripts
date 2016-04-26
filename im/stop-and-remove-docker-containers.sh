@@ -1,5 +1,5 @@
 #!/bin/bash
-# Try to stop any other container with the same name
+# Try to stop any other container with the same name as the parameter passed
 if docker ps -a | grep $1
 then 
     if docker inspect $1 | jq '.[0].State.Status' | awk '{if( $1 = "running" ){ exit 0 } else { exit 1 }}'
