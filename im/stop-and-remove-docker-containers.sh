@@ -7,6 +7,7 @@ then
     	docker stop $1
     fi
 	docker rm $1
-fi
 # Remove image
 docker rmi $1
+fi
+
