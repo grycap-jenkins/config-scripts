@@ -1,13 +1,13 @@
 #!/bin/bash
 
-cd
+cd /tmp
 
 # Install cpyutils
 git clone https://github.com/grycap/cpyutils.git
 cd cpyutils
 sudo python setup.py install
 
-cd 
+cd /tmp 
 
 # Install clues
 git clone https://github.com/grycap/clues.git
